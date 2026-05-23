@@ -1,0 +1,1687 @@
+{
+  "meta": {
+    "balance_version": "1.1",
+    "first_team": "A",
+    "agents": {
+      "A": "DemoAgent",
+      "B": "SimpleAgent"
+    },
+    "agent_a_path": "agents/example_demo.py",
+    "agent_b_path": "agents/example_simple.py",
+    "format_version": 4
+  },
+  "events": [
+    {
+      "kind": "setup",
+      "round": 0,
+      "phase_team": "-",
+      "data": {
+        "units": [
+          {
+            "id": 0,
+            "team": "A",
+            "unit_class": "dmr",
+            "hp": 250,
+            "max_hp": 250,
+            "pos": [
+              0,
+              1
+            ]
+          },
+          {
+            "id": 1,
+            "team": "A",
+            "unit_class": "rifle",
+            "hp": 400,
+            "max_hp": 400,
+            "pos": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": 2,
+            "team": "A",
+            "unit_class": "shield",
+            "hp": 600,
+            "max_hp": 600,
+            "pos": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": 3,
+            "team": "A",
+            "unit_class": "rifle",
+            "hp": 400,
+            "max_hp": 400,
+            "pos": [
+              0,
+              4
+            ]
+          },
+          {
+            "id": 4,
+            "team": "A",
+            "unit_class": "medic",
+            "hp": 350,
+            "max_hp": 350,
+            "pos": [
+              0,
+              5
+            ]
+          },
+          {
+            "id": 5,
+            "team": "B",
+            "unit_class": "dmr",
+            "hp": 250,
+            "max_hp": 250,
+            "pos": [
+              10,
+              1
+            ]
+          },
+          {
+            "id": 6,
+            "team": "B",
+            "unit_class": "rifle",
+            "hp": 400,
+            "max_hp": 400,
+            "pos": [
+              10,
+              2
+            ]
+          },
+          {
+            "id": 7,
+            "team": "B",
+            "unit_class": "shield",
+            "hp": 600,
+            "max_hp": 600,
+            "pos": [
+              10,
+              3
+            ]
+          },
+          {
+            "id": 8,
+            "team": "B",
+            "unit_class": "rifle",
+            "hp": 400,
+            "max_hp": 400,
+            "pos": [
+              10,
+              4
+            ]
+          },
+          {
+            "id": 9,
+            "team": "B",
+            "unit_class": "medic",
+            "hp": 350,
+            "max_hp": 350,
+            "pos": [
+              10,
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "kind": "phase",
+      "round": 1,
+      "phase_team": "A",
+      "data": {
+        "status": "ok",
+        "elapsed": 0.0024,
+        "units": [
+          {
+            "id": 0,
+            "hp": 250,
+            "pos": [
+              1,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 1,
+            "hp": 400,
+            "pos": [
+              2,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 2,
+            "hp": 600,
+            "pos": [
+              3,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 3,
+            "hp": 400,
+            "pos": [
+              2,
+              5
+            ],
+            "alive": true
+          },
+          {
+            "id": 4,
+            "hp": 350,
+            "pos": [
+              2,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 5,
+            "hp": 250,
+            "pos": [
+              10,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 6,
+            "hp": 400,
+            "pos": [
+              10,
+              2
+            ],
+            "alive": true
+          },
+          {
+            "id": 7,
+            "hp": 600,
+            "pos": [
+              10,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 8,
+            "hp": 400,
+            "pos": [
+              10,
+              4
+            ],
+            "alive": true
+          },
+          {
+            "id": 9,
+            "hp": 350,
+            "pos": [
+              10,
+              5
+            ],
+            "alive": true
+          }
+        ],
+        "actions": [
+          {
+            "kind": "move",
+            "unit_id": 2,
+            "from": [
+              0,
+              3
+            ],
+            "to": [
+              3,
+              3
+            ],
+            "path": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 1,
+            "from": [
+              0,
+              2
+            ],
+            "to": [
+              2,
+              1
+            ],
+            "path": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 3,
+            "from": [
+              0,
+              4
+            ],
+            "to": [
+              2,
+              5
+            ],
+            "path": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 0,
+            "from": [
+              0,
+              1
+            ],
+            "to": [
+              1,
+              3
+            ],
+            "path": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 4,
+            "from": [
+              0,
+              5
+            ],
+            "to": [
+              2,
+              3
+            ],
+            "path": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "gauge_a": 0,
+        "gauge_b": 0
+      }
+    },
+    {
+      "kind": "phase",
+      "round": 1,
+      "phase_team": "B",
+      "data": {
+        "status": "ok",
+        "elapsed": 0.0009,
+        "units": [
+          {
+            "id": 0,
+            "hp": 250,
+            "pos": [
+              1,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 1,
+            "hp": 400,
+            "pos": [
+              2,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 2,
+            "hp": 600,
+            "pos": [
+              3,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 3,
+            "hp": 400,
+            "pos": [
+              2,
+              5
+            ],
+            "alive": true
+          },
+          {
+            "id": 4,
+            "hp": 350,
+            "pos": [
+              2,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 5,
+            "hp": 250,
+            "pos": [
+              8,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 6,
+            "hp": 400,
+            "pos": [
+              7,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 7,
+            "hp": 600,
+            "pos": [
+              8,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 8,
+            "hp": 400,
+            "pos": [
+              8,
+              4
+            ],
+            "alive": true
+          },
+          {
+            "id": 9,
+            "hp": 350,
+            "pos": [
+              6,
+              5
+            ],
+            "alive": true
+          }
+        ],
+        "actions": [
+          {
+            "kind": "move",
+            "unit_id": 5,
+            "from": [
+              10,
+              1
+            ],
+            "to": [
+              8,
+              1
+            ],
+            "path": [
+              [
+                9,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 6,
+            "from": [
+              10,
+              2
+            ],
+            "to": [
+              7,
+              3
+            ],
+            "path": [
+              [
+                9,
+                3
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                7,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 7,
+            "from": [
+              10,
+              3
+            ],
+            "to": [
+              8,
+              3
+            ],
+            "path": [
+              [
+                9,
+                3
+              ],
+              [
+                8,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 8,
+            "from": [
+              10,
+              4
+            ],
+            "to": [
+              8,
+              4
+            ],
+            "path": [
+              [
+                9,
+                4
+              ],
+              [
+                8,
+                4
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 9,
+            "from": [
+              10,
+              5
+            ],
+            "to": [
+              6,
+              5
+            ],
+            "path": [
+              [
+                9,
+                5
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                7,
+                5
+              ],
+              [
+                6,
+                5
+              ]
+            ]
+          }
+        ],
+        "gauge_a": 0,
+        "gauge_b": 0
+      }
+    },
+    {
+      "kind": "gauge",
+      "round": 1,
+      "phase_team": "-",
+      "data": {
+        "n_a": 1,
+        "n_b": 1,
+        "delta_a": 10,
+        "delta_b": 10,
+        "gauge_a": 10,
+        "gauge_b": 10
+      }
+    },
+    {
+      "kind": "phase",
+      "round": 2,
+      "phase_team": "B",
+      "data": {
+        "status": "ok",
+        "elapsed": 0.0015,
+        "units": [
+          {
+            "id": 0,
+            "hp": 250,
+            "pos": [
+              1,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 1,
+            "hp": 230,
+            "pos": [
+              2,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 2,
+            "hp": 430,
+            "pos": [
+              3,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 3,
+            "hp": 400,
+            "pos": [
+              2,
+              5
+            ],
+            "alive": true
+          },
+          {
+            "id": 4,
+            "hp": 350,
+            "pos": [
+              2,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 5,
+            "hp": 250,
+            "pos": [
+              6,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 6,
+            "hp": 400,
+            "pos": [
+              4,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 7,
+            "hp": 600,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 8,
+            "hp": 400,
+            "pos": [
+              6,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 9,
+            "hp": 350,
+            "pos": [
+              6,
+              4
+            ],
+            "alive": true
+          }
+        ],
+        "actions": [
+          {
+            "kind": "move",
+            "unit_id": 5,
+            "from": [
+              8,
+              1
+            ],
+            "to": [
+              6,
+              1
+            ],
+            "path": [
+              [
+                7,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ]
+          },
+          {
+            "kind": "attack",
+            "unit_id": 5,
+            "target_id": 2,
+            "damage": 170,
+            "target_hp_after": 430
+          },
+          {
+            "kind": "move",
+            "unit_id": 6,
+            "from": [
+              7,
+              3
+            ],
+            "to": [
+              4,
+              3
+            ],
+            "path": [
+              [
+                6,
+                3
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "attack",
+            "unit_id": 6,
+            "target_id": 1,
+            "damage": 170,
+            "target_hp_after": 230
+          },
+          {
+            "kind": "move",
+            "unit_id": 7,
+            "from": [
+              8,
+              3
+            ],
+            "to": [
+              5,
+              3
+            ],
+            "path": [
+              [
+                7,
+                3
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 8,
+            "from": [
+              8,
+              4
+            ],
+            "to": [
+              6,
+              3
+            ],
+            "path": [
+              [
+                7,
+                3
+              ],
+              [
+                6,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 9,
+            "from": [
+              6,
+              5
+            ],
+            "to": [
+              6,
+              4
+            ],
+            "path": [
+              [
+                6,
+                4
+              ]
+            ]
+          }
+        ],
+        "gauge_a": 10,
+        "gauge_b": 10
+      }
+    },
+    {
+      "kind": "phase",
+      "round": 2,
+      "phase_team": "A",
+      "data": {
+        "status": "ok",
+        "elapsed": 0.0067,
+        "units": [
+          {
+            "id": 0,
+            "hp": 250,
+            "pos": [
+              0,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 1,
+            "hp": 400,
+            "pos": [
+              2,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 2,
+            "hp": 430,
+            "pos": [
+              6,
+              2
+            ],
+            "alive": true
+          },
+          {
+            "id": 3,
+            "hp": 400,
+            "pos": [
+              2,
+              5
+            ],
+            "alive": true
+          },
+          {
+            "id": 4,
+            "hp": 350,
+            "pos": [
+              1,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 5,
+            "hp": 5,
+            "pos": [
+              6,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 6,
+            "hp": 0,
+            "pos": [
+              4,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 7,
+            "hp": 76,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 8,
+            "hp": 400,
+            "pos": [
+              6,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 9,
+            "hp": 350,
+            "pos": [
+              6,
+              4
+            ],
+            "alive": true
+          }
+        ],
+        "actions": [
+          {
+            "kind": "move",
+            "unit_id": 2,
+            "from": [
+              3,
+              3
+            ],
+            "to": [
+              6,
+              2
+            ],
+            "path": [
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                6,
+                2
+              ]
+            ]
+          },
+          {
+            "kind": "attack",
+            "unit_id": 2,
+            "target_id": 5,
+            "damage": 245,
+            "target_hp_after": 5
+          },
+          {
+            "kind": "attack",
+            "unit_id": 1,
+            "target_id": 7,
+            "damage": 262,
+            "target_hp_after": 338
+          },
+          {
+            "kind": "attack",
+            "unit_id": 3,
+            "target_id": 7,
+            "damage": 262,
+            "target_hp_after": 76
+          },
+          {
+            "kind": "move",
+            "unit_id": 0,
+            "from": [
+              1,
+              3
+            ],
+            "to": [
+              0,
+              1
+            ],
+            "path": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "kind": "attack",
+            "unit_id": 0,
+            "target_id": 6,
+            "damage": 400,
+            "target_hp_after": 0
+          },
+          {
+            "kind": "move",
+            "unit_id": 4,
+            "from": [
+              2,
+              3
+            ],
+            "to": [
+              1,
+              3
+            ],
+            "path": [
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "heal",
+            "unit_id": 4,
+            "target_id": 1,
+            "amount": 170,
+            "target_hp_after": 400
+          }
+        ],
+        "gauge_a": 10,
+        "gauge_b": 10
+      }
+    },
+    {
+      "kind": "gauge",
+      "round": 2,
+      "phase_team": "-",
+      "data": {
+        "n_a": 0,
+        "n_b": 1,
+        "delta_a": 0,
+        "delta_b": 10,
+        "gauge_a": 10,
+        "gauge_b": 20
+      }
+    },
+    {
+      "kind": "phase",
+      "round": 3,
+      "phase_team": "A",
+      "data": {
+        "status": "ok",
+        "elapsed": 0.0038,
+        "units": [
+          {
+            "id": 0,
+            "hp": 250,
+            "pos": [
+              2,
+              2
+            ],
+            "alive": true
+          },
+          {
+            "id": 1,
+            "hp": 400,
+            "pos": [
+              2,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 2,
+            "hp": 430,
+            "pos": [
+              6,
+              2
+            ],
+            "alive": true
+          },
+          {
+            "id": 3,
+            "hp": 400,
+            "pos": [
+              2,
+              5
+            ],
+            "alive": true
+          },
+          {
+            "id": 4,
+            "hp": 350,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 5,
+            "hp": 0,
+            "pos": [
+              6,
+              1
+            ],
+            "alive": false
+          },
+          {
+            "id": 6,
+            "hp": 0,
+            "pos": [
+              4,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 7,
+            "hp": 0,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 8,
+            "hp": 0,
+            "pos": [
+              6,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 9,
+            "hp": 45,
+            "pos": [
+              6,
+              4
+            ],
+            "alive": true
+          }
+        ],
+        "actions": [
+          {
+            "kind": "attack",
+            "unit_id": 2,
+            "target_id": 5,
+            "damage": 245,
+            "target_hp_after": 0
+          },
+          {
+            "kind": "attack",
+            "unit_id": 1,
+            "target_id": 7,
+            "damage": 262,
+            "target_hp_after": 0
+          },
+          {
+            "kind": "attack",
+            "unit_id": 3,
+            "target_id": 9,
+            "damage": 225,
+            "target_hp_after": 125
+          },
+          {
+            "kind": "move",
+            "unit_id": 0,
+            "from": [
+              0,
+              1
+            ],
+            "to": [
+              2,
+              2
+            ],
+            "path": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ]
+          },
+          {
+            "kind": "attack",
+            "unit_id": 0,
+            "target_id": 8,
+            "damage": 400,
+            "target_hp_after": 0
+          },
+          {
+            "kind": "move",
+            "unit_id": 4,
+            "from": [
+              1,
+              3
+            ],
+            "to": [
+              5,
+              3
+            ],
+            "path": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "attack",
+            "unit_id": 4,
+            "target_id": 9,
+            "damage": 80,
+            "target_hp_after": 45
+          }
+        ],
+        "gauge_a": 10,
+        "gauge_b": 20
+      }
+    },
+    {
+      "kind": "phase",
+      "round": 3,
+      "phase_team": "B",
+      "data": {
+        "status": "ok",
+        "elapsed": 0.0003,
+        "units": [
+          {
+            "id": 0,
+            "hp": 250,
+            "pos": [
+              2,
+              2
+            ],
+            "alive": true
+          },
+          {
+            "id": 1,
+            "hp": 400,
+            "pos": [
+              2,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 2,
+            "hp": 430,
+            "pos": [
+              6,
+              2
+            ],
+            "alive": true
+          },
+          {
+            "id": 3,
+            "hp": 400,
+            "pos": [
+              2,
+              5
+            ],
+            "alive": true
+          },
+          {
+            "id": 4,
+            "hp": 270,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 5,
+            "hp": 0,
+            "pos": [
+              6,
+              1
+            ],
+            "alive": false
+          },
+          {
+            "id": 6,
+            "hp": 0,
+            "pos": [
+              4,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 7,
+            "hp": 0,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 8,
+            "hp": 0,
+            "pos": [
+              6,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 9,
+            "hp": 45,
+            "pos": [
+              6,
+              4
+            ],
+            "alive": true
+          }
+        ],
+        "actions": [
+          {
+            "kind": "attack",
+            "unit_id": 9,
+            "target_id": 4,
+            "damage": 80,
+            "target_hp_after": 270
+          }
+        ],
+        "gauge_a": 10,
+        "gauge_b": 20
+      }
+    },
+    {
+      "kind": "gauge",
+      "round": 3,
+      "phase_team": "-",
+      "data": {
+        "n_a": 1,
+        "n_b": 0,
+        "delta_a": 10,
+        "delta_b": 0,
+        "gauge_a": 20,
+        "gauge_b": 20
+      }
+    },
+    {
+      "kind": "phase",
+      "round": 4,
+      "phase_team": "B",
+      "data": {
+        "status": "ok",
+        "elapsed": 0.0003,
+        "units": [
+          {
+            "id": 0,
+            "hp": 250,
+            "pos": [
+              2,
+              2
+            ],
+            "alive": true
+          },
+          {
+            "id": 1,
+            "hp": 400,
+            "pos": [
+              2,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 2,
+            "hp": 430,
+            "pos": [
+              6,
+              2
+            ],
+            "alive": true
+          },
+          {
+            "id": 3,
+            "hp": 400,
+            "pos": [
+              2,
+              5
+            ],
+            "alive": true
+          },
+          {
+            "id": 4,
+            "hp": 190,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 5,
+            "hp": 0,
+            "pos": [
+              6,
+              1
+            ],
+            "alive": false
+          },
+          {
+            "id": 6,
+            "hp": 0,
+            "pos": [
+              4,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 7,
+            "hp": 0,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 8,
+            "hp": 0,
+            "pos": [
+              6,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 9,
+            "hp": 45,
+            "pos": [
+              6,
+              4
+            ],
+            "alive": true
+          }
+        ],
+        "actions": [
+          {
+            "kind": "attack",
+            "unit_id": 9,
+            "target_id": 4,
+            "damage": 80,
+            "target_hp_after": 190
+          }
+        ],
+        "gauge_a": 20,
+        "gauge_b": 20
+      }
+    },
+    {
+      "kind": "phase",
+      "round": 4,
+      "phase_team": "A",
+      "data": {
+        "status": "ok",
+        "elapsed": 0.0025,
+        "units": [
+          {
+            "id": 0,
+            "hp": 250,
+            "pos": [
+              2,
+              1
+            ],
+            "alive": true
+          },
+          {
+            "id": 1,
+            "hp": 400,
+            "pos": [
+              3,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 2,
+            "hp": 600,
+            "pos": [
+              5,
+              4
+            ],
+            "alive": true
+          },
+          {
+            "id": 3,
+            "hp": 400,
+            "pos": [
+              2,
+              5
+            ],
+            "alive": true
+          },
+          {
+            "id": 4,
+            "hp": 190,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": true
+          },
+          {
+            "id": 5,
+            "hp": 0,
+            "pos": [
+              6,
+              1
+            ],
+            "alive": false
+          },
+          {
+            "id": 6,
+            "hp": 0,
+            "pos": [
+              4,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 7,
+            "hp": 0,
+            "pos": [
+              5,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 8,
+            "hp": 0,
+            "pos": [
+              6,
+              3
+            ],
+            "alive": false
+          },
+          {
+            "id": 9,
+            "hp": 0,
+            "pos": [
+              6,
+              4
+            ],
+            "alive": false
+          }
+        ],
+        "actions": [
+          {
+            "kind": "move",
+            "unit_id": 2,
+            "from": [
+              6,
+              2
+            ],
+            "to": [
+              5,
+              4
+            ],
+            "path": [
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          },
+          {
+            "kind": "attack",
+            "unit_id": 2,
+            "target_id": 9,
+            "damage": 180,
+            "target_hp_after": 0
+          },
+          {
+            "kind": "move",
+            "unit_id": 1,
+            "from": [
+              2,
+              1
+            ],
+            "to": [
+              3,
+              3
+            ],
+            "path": [
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "move",
+            "unit_id": 0,
+            "from": [
+              2,
+              2
+            ],
+            "to": [
+              2,
+              1
+            ],
+            "path": [
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "kind": "heal",
+            "unit_id": 4,
+            "target_id": 2,
+            "amount": 170,
+            "target_hp_after": 600
+          }
+        ],
+        "gauge_a": 20,
+        "gauge_b": 20
+      }
+    },
+    {
+      "kind": "end",
+      "round": 4,
+      "phase_team": "-",
+      "data": {
+        "winner": "A",
+        "reason": "annihilation",
+        "gauge_a": 20,
+        "gauge_b": 20
+      }
+    }
+  ],
+  "hash": "6f37ce381da9f3b7065649f691f1ee5cac05053ae8d5d3fcb6d2c17a3877e60c"
+}

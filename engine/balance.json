@@ -1,0 +1,53 @@
+{
+  "version": "1.1",
+  "units": {
+    "shield": { "hp": 600, "atk": 230, "def": 150, "mov": 3, "rng": 1, "min_rng": 1, "heal_amount": 0 },
+    "rifle":  { "hp": 400, "atk": 250, "def":  80, "mov": 3, "rng": 3, "min_rng": 1, "heal_amount": 0 },
+    "dmr":    { "hp": 250, "atk": 320, "def": 100, "mov": 2, "rng": 5, "min_rng": 2, "heal_amount": 0 },
+    "medic":  { "hp": 350, "atk": 130, "def":  50, "mov": 4, "rng": 2, "min_rng": 1, "heal_amount": 220 }
+  },
+  "combat": {
+    "min_damage": 10,
+    "type_advantage_multiplier": 1.50,
+    "high_ground_attack_multiplier": 1.10,
+    "high_ground_range_bonus": 1
+  },
+  "victory": {
+    "gauge_win_threshold": 100,
+    "gauge_per_turn": 10,
+    "max_rounds": 30
+  },
+  "rules": {
+    "first_round_attack_forbidden": true,
+    "alternate_first_turn": true,
+    "phase_time_limit_sec": 10,
+    "first_phase_time_limit_sec": 15,
+    "consecutive_timeout_limit": 3
+  },
+  "type_advantages": [
+    { "attacker": "shield", "target": "dmr",    "multiplier": 1.50 },
+    { "attacker": "rifle",  "target": "shield", "multiplier": 1.50 },
+    { "attacker": "dmr",    "target": "rifle",  "multiplier": 1.50 }
+  ],
+  "map": {
+    "default_path": "engine/maps/default.txt",
+    "width": 11,
+    "height": 7
+  },
+  "start_positions": {
+    "A": {
+      "dmr":     [0, 1],
+      "rifle_1": [0, 2],
+      "shield":  [0, 3],
+      "rifle_2": [0, 4],
+      "medic":   [0, 5]
+    },
+    "B": {
+      "dmr":     [10, 1],
+      "rifle_1": [10, 2],
+      "shield":  [10, 3],
+      "rifle_2": [10, 4],
+      "medic":   [10, 5]
+    }
+  }
+}

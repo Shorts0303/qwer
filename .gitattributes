@@ -1,0 +1,8 @@
+# 모든 text 파일은 repo + working tree 모두 LF 로 고정.
+# Windows ↔ WSL 동시 사용 시 발생하는 CRLF/LF 충돌(git status 가짜 modified)
+# 영구 차단용.
+* text=auto eol=lf
+
+# 명시적 binary 지정 — auto 가 잘못 추론하는 케이스 방지.
+*.png  binary
+*.woff2 binary
